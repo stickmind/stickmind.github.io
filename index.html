@@ -1,12 +1,575 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stickmind.github.io</title>
+     <title>StickMind - A Potential Computer Science Hub</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="StickMind - A Potential Computer Science Hub">
+     <meta name="keywords" content="计算机科学,编程,CS,C++,C">
+     <meta name="author" content="StickMind">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.staticfile.org/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="https://cdn.staticfile.org/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
 </head>
-<body>
-    <a href="https://www.stickmind.com">StickMind.COM</a>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="." class="navbar-brand">StickMind</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#top" class="smoothScroll">主页</a></li>
+                         <li><a href="#about" class="smoothScroll">项目背景</a></li>
+                         <li><a href="#team" class="smoothScroll">讲师团队</a></li>
+                         <li><a href="#courses" class="smoothScroll">课程规划</a></li>
+                         <!-- <li><a href="#testimonial" class="smoothScroll">学员评价</a></li> -->
+                         <li><a href="#contact" class="smoothScroll">联系我们</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <!-- HOME -->
+     <section id="home">
+          <div class="row">
+
+               <div class="owl-carousel owl-theme home-slider">
+                    <div class="item item-first circles">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1>不一样的计算机课程</h1>
+                                        <h3>完美复现名校课程，详尽的课程资源以及贴心的教学服务</h3>
+                                        <a href="#feature" class="section-btn btn btn-default smoothScroll">了解更多</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                    </div>
+
+                    <div class="item item-second circles">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1>完善的课程体系</h1>
+                                        <h3>从零基础到进阶一整套在线课程，省时省力，为您的专业保驾护航</h3>
+                                        <a href="#courses" class="section-btn btn btn-default smoothScroll">选择课程</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                    </div>
+
+                    <div class="item item-third circles">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1>贴心的教学服务</h1>
+                                        <h3>负责的讲师团队为您带来及时的学习指导</h3>
+                                        <a href="#contact" class="section-btn btn btn-default smoothScroll">联系我们</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- FEATURE -->
+     <section id="feature">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>01</span>
+                              <h3>课程特色</h3>
+                              <p>完美复现斯坦福 CS 课程，让您得到原汁原味的学习体验。</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>02</span>
+                              <h3>教学资源</h3>
+                              <p>完善的课程体系，详尽的教学文档，为您的学习体验保驾护航。</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="feature-thumb">
+                              <span>03</span>
+                              <h3>教学服务</h3>
+                              <p>贴心的授课讲师提供及时的答疑，并对每份作业一对一代码评审。</p>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="section-title about-info">
+                              <h2>项目背景</h2>
+                              <p>本项目由武汉理工大学汪洋博士发起，旨在为传统工科领域学生提供编程入门的途径。</p>
+                              <p>非计算机专业的同学在自学过程中常常会遇到很多问题，在一次次尝试一次次失败后，不仅对自己丧失了信心，更浪费了大把的时间。</p>
+
+                              <figure>
+                                   <span><i class="fa fa-light fa-screwdriver-wrench"></i></span>
+                                   <figcaption>
+                                        <h3>环境搭建</h3>
+                                        <p>学习过程中最劝退的就是开发环境问题多多，常常导致无法顺利完成学习</p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa fa-regular fa-question"></i></span>
+                                   <figcaption>
+                                        <h3>课程答疑</h3>
+                                        <p>自学往往无法抓住课程的重点和精妙之处，简单的调试问题也会难倒很多人</p>
+                                   </figcaption>
+                              </figure>
+
+                              <figure>
+                                   <span><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+                                   <figcaption>
+                                        <h3>作业批改</h3>
+                                        <p>没人帮忙批改作业，不知道自己写的对不对、好不好，只能学个大概</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="contact-image">
+                              <img src="images/questions.webp" class="img-responsive" loading="lazy"
+                                   alt="Smiling Two Girls">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- TEAM -->
+     <section id="team">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>讲师团队 <small>让知识走出象牙塔</small></h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-4">
+                         <div class="team-thumb">
+                              <div class="team-image">
+                                   <!-- <img src="images/author-image.jpg" class="img-responsive" loading="lazy" alt=""> -->
+                                   <img src="https://gravatar.kuibu.net/avatar/403b03066afa99db7d36150cd1bfa2e5?s=600"
+                                        class="img-responsive" loading="lazy" alt="">
+                              </div>
+                              <div class="team-info">
+                                   <h3>薛浩</h3>
+                                   <span>追求卓越，宁静致远</span>
+                              </div>
+                              <ul class="social-icon">
+                                   <li><a href="https://github.com/xuehao" class="fa-brands fa-github"
+                                             target="_blank"></a></li>
+                                   <li><a href="https://blog.stickmind.com" class="fa-solid fa-blog"
+                                             target="_blank"></a></li>
+                                   <li><a href="https://space.bilibili.com/95093036" class="fa-brands fa-bilibili"
+                                             target="_blank"></a></li>
+                                   <li><a href="mailto:xuehao0618@outlook.com" class="fa-regular fa-envelope"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- Courses -->
+     <section id="courses">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>课程规划 <small>打造不一样的计算机科学知识体系</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-courses">
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/cs100.webp" class="img-responsive"
+                                                            loading="lazy" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 即将到来</span>
+                                                       <span><i class="fa fa-clock-o"></i> 10 次课</span>
+                                                  </div>
+                                             </div>
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">CS100: C++ 编程方法学</a></h3>
+                                                  <p>选用优秀的斯坦福 C++ 库教学，或许可以成为你的第一门计算机编程课</p>
+                                             </div>
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="https://gravatar.kuibu.net/avatar/403b03066afa99db7d36150cd1bfa2e5?s=100"
+                                                            class="img-responsive" loading="lazy" alt="">
+                                                       <span>薛浩</span>
+                                                  </div>
+                                                  <div class="courses-price free">
+                                                       <a href="#"><span>免费</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div> <!-- CS100 -->
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/cs101.webp" class="img-responsive"
+                                                            loading="lazy" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 2023 年 2 月 20 日</span>
+                                                       <span><i class="fa fa-clock-o"></i> 20 次课</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="https://cs101.stickmind.com" target="_blank">CS101: C++
+                                                            编程抽象思维</a></h3>
+                                                  <p>重点讲解了递归思维，以及一些经典的数据结构和算法实现</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="https://gravatar.kuibu.net/avatar/403b03066afa99db7d36150cd1bfa2e5?s=100"
+                                                            class="img-responsive" loading="lazy" alt="">
+                                                       <span>薛浩</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="https://cs101.stickmind.com"><span>RMB 999</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/cs102.webp" class="img-responsive"
+                                                            loading="lazy" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 2022 年 12 月 26 日</span>
+                                                       <span><i class="fa fa-clock-o"></i> 15 次课</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="https://cs102.stickmind.com" target="_blank">CS102:
+                                                            计算机组成与系统</a></h3>
+                                                  <p>使用 C 和汇编语言继续提升你的编程技术，带你揭开计算机系统的奥秘</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="https://gravatar.kuibu.net/avatar/403b03066afa99db7d36150cd1bfa2e5?s=100"
+                                                            class="img-responsive" loading="lazy" alt="">
+                                                       <span>薛浩</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="https://cs102.stickmind.com"><span>RMB 999</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="images/cs103.webp" class="img-responsive"
+                                                            loading="lazy" alt="">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> 即将到来</span>
+                                                       <span><i class="fa fa-clock-o"></i> 20 次课</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="#">CS103: 操作系统原理</a></h3>
+                                                  <p>更好地认识操作系统的工作原理，以及适用于其他大型系统的关键计算思想</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="https://gravatar.kuibu.net/avatar/403b03066afa99db7d36150cd1bfa2e5?s=100"
+                                                            class="img-responsive" loading="lazy" alt="">
+                                                       <span>薛浩</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="#"><span>RMB 999</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+
+     <!-- TESTIMONIAL
+     <section id="testimonial">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>学员评价 <small>来自全球学员的声音</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-client">
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="images/tst-image1.jpg" class="img-responsive" loading="lazy"
+                                                  alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Jackson</h4>
+                                             <span>Shopify Developer</span>
+                                        </div>
+                                        <p>You really do help young creative minds to get quality education and
+                                             professional job search assistance. I’d recommend it to everyone!</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="images/tst-image2.jpg" class="img-responsive" loading="lazy"
+                                                  alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Camila</h4>
+                                             <span>Marketing Manager</span>
+                                        </div>
+                                        <p>Trying something new is exciting! Thanks for the amazing law course and the
+                                             great teacher who was able to make it interesting.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="images/tst-image3.jpg" class="img-responsive" loading="lazy"
+                                                  alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Barbie</h4>
+                                             <span>Art Director</span>
+                                        </div>
+                                        <p>Donec erat libero, blandit vitae arcu eu, lacinia placerat justo. Sed
+                                             sollicitudin quis felis vitae hendrerit.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="images/tst-image4.jpg" class="img-responsive" loading="lazy"
+                                                  alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>Andrio</h4>
+                                             <span>Web Developer</span>
+                                        </div>
+                                        <p>Nam eget mi eu ante faucibus viverra nec sed magna. Vivamus viverra sapien
+                                             ex, elementum varius ex sagittis vel.</p>
+                                        <div class="tst-rating">
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                             <i class="fa fa-star"></i>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+
+                    </div>
+               </div>
+     </section>
+      TESTIMONIAL -->
+
+     <!-- CONTACT -->
+     <section id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="section-title">
+                              <h2>联系我们 <small>不一样的学习体验即将开始，一起聊聊吧</small></h2>
+                         </div>
+                         <ul class="social-icon">
+                              <li><a href="tel:+8615250214716" class="fa-solid fa-phone" target="_blank"></a></li>
+                              <li><a href="mailto:xuehao0618@outlook.com" class="fa-solid fa-envelope"></a></li>
+                              <li><a href="weixin://StickMind" class="fa-brands fa-weixin" target="_blank"></a></li>
+                         </ul>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="contact-image">
+                              <img src="images/contact-image.webp" class="img-responsive" loading="lazy"
+                                   alt="Smiling Two Girls">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4">
+                         <div class="footer-info">
+                              <div class="footer_menu">
+                                   <h2>快捷访问</h2>
+                                   <ul>
+                                        <li><a href="https://cs101.stickmind.com" target="_blank">CS101</a></li>
+                                        <li><a href="https://cs102.stickmind.com" target="_blank">CS102</a></li>
+                                        <li><a href="#">CS103</a></li>
+                                        <li><a href="https://cppdoc.stickmind.com" target="_blank">SimpleCxxLib</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4">
+                         <div class="footer-info">
+                              <ul class="social-icon">
+                                   <li><a href="https://github.com/xuehao" class="fa-brands fa-github"
+                                             target="_blank"></a> </li>
+                                   <li><a href="https://blog.stickmind.com" class="fa-solid fa-blog"
+                                             target="_blank"></a></li>
+                                   <li><a href="https://space.bilibili.com/95093036" class="fa-brands fa-bilibili"
+                                             target="_blank"></a></li>
+                                   <li><a href="mailto:xuehao0618@outlook.com" class="fa-regular fa-envelope"></a></li>
+                              </ul>
+                              <div class="copyright-text">
+                                   <p>Copyright &copy; 2023 StickMind</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="https://cdn.staticfile.org/jquery/2.2.3/jquery.min.js"></script>
+     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="https://cdn.staticfile.org/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <title>CS102: 计算机组成与系统</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StickMind - 薛浩的主页" />
+  <meta name="author" content="薛浩" />
+  <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+  <link id="theme-style" rel="stylesheet" href="../../assets/css/main.css" />
+  <link id="theme-style" rel="stylesheet" href="../../assets/css/courses.css" />
+  <script src="../../assets/js/run_prettify.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <h1 id="highlight">
+            <a href="../../" id="highlight">StickMind</a>
+          </h1>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li><a href="../cs101/">CS101</a></li>
+            <li><a href="./">CS102</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-6 fw-bold">
+      <small>CSE-CS102</small><br />计算机系统与编程
+    </h1>
+    <div class="col-lg-6 mx-auto">
+      <p>不一样的系统课</p>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="https://www.bell-labs.com/usr/dmr/www/kd14.jpg" class="img-fluid border rounded-3 shadow-lg mb-4"
+          alt="" loading="lazy" width="700" height="500" />
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row">
+      <div class="col-lg-12 cs101">
+        <div class="bd-callout bd-callout-warning">
+          <h5><b>开课通知</b></h5>
+          <p>
+            试讲课程已于 2022/12/26 开始，目前主要面向刚学完 CS101 即将毕业找工作的部分同学。<br>
+            第一期正式课程暂定 2023/5/20 开始，持续报名中……<br>
+            更多精彩，敬请期待！
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">课程介绍</h2>
+        <hr />
+        <p>
+          《CSE-CS101：编程方法与抽象思维——不一样的编程课》在编程方法与抽象思维上，为你提供了扎实的基础。本课程《<b>CSE-CS102：计算机系统与编程</b>——不一样的系统课》将在此基础上继续提升你的编程技术，在广度和深度上拓展你的编程经验。
+        </p>
+        <p>
+          本课程参考了斯坦福大学 CS107 课程的教学目标和大纲，从 C
+          语言开始，逐步深入到底层汇编语言，一步步带你梳理计算机底层的逻辑。当完全理解计算机如何执行程序并操作数据时，你将会成为一名更高效的程序员，特别是在处理调试问题、性能优化、内存管理以及程序健壮性方面。
+        </p>
+        <p>本课程的目标是让学生<b>掌握</b></p>
+        <ul>
+          <li>以复杂的内存和指针方式编写 C 程序</li>
+          <li>
+            对地址空间以及 C 程序的编译/运行时行为，能够建立一个准确的模型
+          </li>
+        </ul>
+        <p>获得以下<b>能力</b></p>
+        <ul>
+          <li>把 C 语言转换到 x86-64 汇编语言</li>
+          <li>编写适配硬件算术局限性的程序</li>
+          <li>识别程序瓶颈并提高运行时性能</li>
+          <li>在 Unix 环境中开发程序</li>
+        </ul>
+        <p>贯穿整个课程，最终会带你揭开计算机基础架构的奥秘。</p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">面向对象</h2>
+        <hr />
+        <p>
+          学完《CSE-CS101：编程方法与抽象思维——不一样的编程课》或具备以下能力的同学：
+        </p>
+        <ul>
+          <li>了解 C++ 基本语法</li>
+          <li>会用递归思维解决问题</li>
+          <li>
+            理解数据抽象并能够实现经典的抽象数据类型（链表、栈、堆、集合、映射）
+          </li>
+          <li>理解并能够实现经典算法（搜索、排序、哈希）</li>
+        </ul>
+        <p>
+          作为一名程序员，你也应该具备良好的软件工程能力，能够编写组织良好、可读性强的代码。
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">课程安排</h2>
+        <hr />
+        <p>
+          课程预计安排 15 次课，大概每 2 次课安排 1 次实验课并发布 1
+          次作业。每次会留出一周多的时间，供大家巩固知识点并完成对应作业。
+        </p>
+        <p>本课程主要涉及以下几个主题：</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">Unix、命令行工具与 C 语言</h5>
+          <p class="text-center" style="margin: 0 0 0 0">
+            <img src="terminal.png" loading="lazy" class="card-img-top" style="width: 50%; margin-top: 10px" />
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              如何使用命令行工具，编写、编译、测试并运行我们的 C 程序？
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#terminalModal">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">编写、测试、调试与优化</h5>
+          <div style="
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                background-color: #f0f0f0;
+              ">
+            <samp>(gdb) b myFunc</samp><br />
+            <samp>(gdb) r input.txt</samp><br />
+            <samp>...</samp>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              如何编写风格良好的代码？如何编写全面的测试案例？如何利用 GDB 和 Valgrind 等工具调试并优化我们的程序？
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#toolsModal">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">话题 1：位和字节</h5>
+          <p class="text-center" style="margin: 0 0 0 0">
+            <img src="twoscomplement.png" loading="lazy" class="card-img-top" style="width: 50%; margin-top: 10px" />
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              计算机是如何表示数值的？
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#bitsModal">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">话题 2：字符和字符串</h5>
+          <p class="text-center" style="margin: 0 0 0 0">
+            <img src="string.png" loading="lazy" class="card-img-top" style="width: 100%; margin-top: 10px" />
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              计算机如何表示并处理像文本这样更复杂的数据？
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#stringsModal">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">话题 3：指针、栈和堆</h5>
+          <p class="text-center" style="margin: 0 0 0 0">
+            <img src="pointers.png" loading="lazy" class="card-img-top" style="width: 80%; margin-top: 10px" />
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              在我们的程序中，如何高效地管理不同类型的内存？
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#pointersModal">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card shadow-sm mb-5 bg-white rounded">
+          <h5 class="card-header">More...</h5>
+          <p class="text-center" style="margin: 0 0 0 0">
+            <img src="" loading="lazy" class="card-img-top" style="width: 80%; margin-top: 10px" />
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              更多精彩，敬请期待……
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#xxx">了解更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="terminalModal" tabindex="-1" role="dialog" aria-labelledby="terminalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="terminalModalLabel">
+                Unix, Command Line and C
+              </h5>
+            </div>
+            <div class="modal-body">
+              Unix and command line tools are extremely popular tools outside
+              of CS102 for tasks like running programs (web servers, python
+              programs, remote programs...), accessing remote servers (Amazon
+              Web Services, Microsoft Azure, Heroku...), programming embedded
+              devices (Raspberry Pi, etc.), and more.
+              <b>Our goal for CS102 was to help you become proficient in
+                navigating Unix.</b>
+              It wasn't that long ago that we were introducing the command
+              line and commands like <kbd>cd</kbd> for the first time!
+              <img src="terminal-intro.png" loading="lazy" width="100%" style="margin-top: 10px; margin-bottom: 10px" />
+              <p>
+                Our goal was also to get you up to speed writing programs in
+                C. It wasn't that long ago that we were being introduced to
+                our first C program!
+              </p>
+              <pre class="prettyprint lang-c">
+/*
+* hello.c
+* This program prints a welcome message
+* to the user.
+*/
+#include <stdio.h> // for pri
+int main(int argc, char *argv[]) {
+    printf("Hello, world!\n");
+    return 0;
+}</stdio.h></pre>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="toolsModal" tabindex="-1" role="dialog" aria-labelledby="toolsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="toolsModalLabel">
+                Writing, Testing, Debugging and Profiling Code
+              </h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                <b>Coding Style:</b> Writing clean, readable code is crucial
+                for any computer science project. Unfortunately, a fair amount
+                of existing code is poorly-designed/documented. Our goal for
+                CS102 was to help you write with good coding style, and read,
+                understand and comment provided code.
+              </p>
+              <p>
+                <b>Debugging (GDB):</b> Debugging is a crucial skill for any
+                computer scientist. Our goal for CS102 was to help you become
+                a better debugger, specifically in the steps of narrowing in
+                on bugs, diagnosing issues, and implementing fixes.
+                Practically every project you work on will have debugging
+                facilities, whether it's Python (PDB), IDEs with built-in
+                debuggers (QT Creator, Eclipse) or web development (in-browser
+                debugger).
+              </p>
+              <p>
+                <b>Testing (Sanity Check):</b> Testing is a crucial skill for
+                any computer scientist. Our goal for CS102 was to help you
+                become a better tester, especially with tasks such as writing
+                targeted tests to validate correctness, using tests to prevent
+                "regressions" (breaking previously-implemented functionality)
+                and using tests to develop incrementally.
+              </p>
+              <p>
+                <b>Memory Checking and Profiling (Valgrind / Callgrind):</b>
+                Memory checking and profiling are crucial for any computer
+                scientist to analyze program performance and increase
+                efficiency. Many projects you work on will have profiling and
+                memory analysis facilities: for example, mobile development
+                has integrated tools (Xcode Instruments, Android Profiler,
+                etc.), and web development has in-browser tools.
+              </p>
+              <br />
+              <p>
+                You’ll see manifestations of these tools throughout projects
+                you work on. We hope you can use your CS102 knowledge to take
+                advantage of them!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="bitsModal" tabindex="-1" role="dialog" aria-labelledby="bitsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bitsModalLabel">
+                Unix, Command Line and C
+              </h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                <b>Key question:</b> How can a computer represent integer
+                numbers?
+              </p>
+              <p>
+                <b>Why does this matter?</b> Limitations of representation and
+                arithmetic impact programs! We can also efficiently manipulate
+                data using bits.
+              </p>
+              <img src="gandhi.png" loading="lazy" width="100%" />
+              <a target="_blank"
+                href="https://kotaku.com/why-gandhi-is-such-an-asshole-in-civilization-1653818245">https://kotaku.com/why-gandhi-is-such-an-asshole-in-civilization-1653818245</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="stringsModal" tabindex="-1" role="dialog" aria-labelledby="stringsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="stringsModalLabel">
+                Chars and C-Strings
+              </h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                <b>Key question:</b> How can a computer represent and
+                manipulate more complex data like text? <br /><i>Strings in C are arrays of characters ending with a
+                  null
+                  terminator! We can manipulate them using pointers and C
+                  library functions (many of which you could probably
+                  implement).</i>
+              </p>
+              <p>
+                <b>Why does this matter?</b> Understanding this representation
+                is key to efficient string manipulation. This is also how
+                strings are represented in both low- and high-level languages
+                such as
+                <a target="_blank" href="https://www.quora.com/How-does-C++-implement-a-string">C++</a>
+                and
+                <a target="_blank"
+                  href="https://www.laurentluce.com/posts/python-string-objects-implementation/">Python</a>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="pointersModal" tabindex="-1" role="dialog" aria-labelledby="pointersModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pointersModalLabel">
+                Pointers, Stack and Heap
+              </h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                <b>Key question:</b> How can we effectively manage all types
+                of memory in our programs? <br /><i>Arrays let us store ordered lists of information. Pointers
+                  let us pass addresses of data instead of the data itself. We
+                  can use the stack, which cleans up memory for us, or the
+                  heap, which we must manually manage.</i>
+              </p>
+              <p>
+                <b>Why does this matter?</b> The stack and heap allow for two
+                ways to store data in our programs, each with their own
+                tradeoffs, and it’s crucial to understand the nuances of
+                managing memory in any program you write! Pointers also let us
+                pass around references to data efficiently.
+              </p>
+              <img src="ptrdiagram.png" loading="lazy" width="100%" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">参考教材</h2>
+        <hr />
+        <p>本课程开课后会持续整理课堂文档。如需参考阅读，推荐以下书籍：</p>
+        <ul>
+          <li>
+            《<a href="https://book.douban.com/subject/26912767/" target="_blank">深入理解计算机系统</a>》 <i>第 3 版</i>
+          </li>
+          <li>
+            《<a href="https://book.douban.com/subject/1139336/" target="_blank">C 程序设计语言</a>》 <i>第 2 版</i>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">授课方式</h2>
+        <hr />
+        <p>
+          考虑到跨平台需求，目前暂定使用<a href="https://www.feishu.cn/" target="_blank">飞书会议</a>视频。请提前下载注册，方便后续加入飞书群组。
+        </p>
+        <p>
+          课程相关答疑，借用 Piazza
+          答疑平台，方便交流。有任何问题，欢迎发帖求助。
+        </p>
+        <p>不建议在聊天群提问，一是不方便检索，二是信息无法保留。</p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">报名方式</h2>
+        <hr />
+        <p>一期授课时间暂定 2023/5/20 开始，报名请访问：<a href="https://h8pqt7tpdf.feishu.cn/docx/PSg7d8FThoz8eKxu8d6ckQGrndd"  target="_blank">最新报名链接</a></p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">联系方式</h2>
+        <hr />
+        <p>微信：StickMind</p>
+        <p>
+          邮箱：<a href="mailto:xuehao0618@outlook.com">xuehao0618@outlook.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="copyright"><a href="https://blog.stickmind.com" target="_blank">Xue Hao</a> &copy; Copyright 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="../../assets/js/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="../../assets/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

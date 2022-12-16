@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <title>CS101：编程方法与抽象思维</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StickMind - 薛浩的主页" />
+  <meta name="author" content="薛浩" />
+  <link rel="shortcut icon" href="../../assets/images/favicon/favicon.ico" />
+  <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+  <link id="theme-style" rel="stylesheet" href="../../assets/css/main.css" />
+  <link id="theme-style" rel="stylesheet" href="../../assets/css/courses.css" />
+  <script src="../../assets/js/run_prettify.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <h1 id="highlight">
+            <a href="../../" id="highlight">StickMind</a>
+          </h1>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li><a href="./">CS101</a></li>
+            <li><a href="../cs102/">CS102</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-6 fw-bold">
+      <small>CSE-CS101</small><br />编程方法与抽象思维
+    </h1>
+    <div class="col-lg-6 mx-auto">
+      <p>不一样的编程课</p>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="overview.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="" loading="lazy" width="700"
+          height="500" />
+      </div>
+    </div>
+  </div>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row">
+      <div class="col-lg-12 cs101">
+        <div class="bd-callout bd-callout-warning">
+          <h5><b>开课通知</b></h5>
+          <p>
+            第一期课程从 2022/9/12 开始，并于 2022/11/24 圆满结束，累计报名人数 211 人。<br>
+            第二期课程暂定 2023/2/20 开始，预计 2023/5/30 结束，持续报名中……<br>
+            更多精彩，敬请期待！
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">课程介绍</h2>
+        <hr />
+        <p>
+          《<b>CS101：编程方法与抽象思维</b>——不一样的编程课》使用 C++
+          编程语言介绍编程方法学以及高级编程技术。本课程参考了斯坦福大学 CS106
+          系列课程的教学目标和大纲，从零开始编写讲义并精心组织相关知识点的引入，从最基础的编程概念逐步深入，重点讲解了分治思想、递归思维、算法分析、数据抽象，以及一些经典的数据结构和算法实现。
+        </p>
+        <p>
+          编程不是记忆一些语法规则，完成一些简单的过程代码，而是如何利用计算机解决<b>难题</b>。本课程是关于从“如何编写程序”过渡到“如何解决计算机问题”，从“如何写对程序”过渡到“如何写好程序”。
+        </p>
+        <p>完成本课程后，我们希望您能实现以下学习目标：</p>
+        <ul>
+          <li>使用编程来解决现实世界中的复杂问题</li>
+          <li>认识并理解计算机科学中通用的抽象思维</li>
+          <li>利用算法推理和递归技能，可以将复杂的问题分解为较小的子问题</li>
+          <li>在使用或设计数据结构和算法时，能够评估设计上的权衡</li>
+        </ul>
+        <p>
+          除此之外，通过本课程的训练，您将获得足够强大的调试能力，并体会到测试驱动开发（TDD）的优势。更令人兴奋的是，课程选用流行的
+          CMake 作为编译工具，您将在无意之间掌握 CMake 的基本用法，一举两得。
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">课程背景</h2>
+        <hr />
+        <p>
+          本课程由武汉理工大学汪洋博士发起，旨在为传统工科领域学生提供编程入门的途径。
+        </p>
+        <p>
+          众所周知，网上公开课千千万，但能够顺利学完的同学寥寥无几。非计算机专业的同学在自学过程中常常遇到以下几类问题：
+        </p>
+        <ul>
+          <li>开发环境问题多多，常常导致无法顺利完成学习</li>
+          <li>无法抓住课程的重点，体会不到课程内容的精妙之处</li>
+          <li>遇到问题无人解答，一个简单的断点调试就劝退了大多数人</li>
+          <li>没有助教帮忙批改作业，不知道自己写的对不对、好不好</li>
+          <li>……</li>
+        </ul>
+        <p>
+          诸如此类的问题，在一次次尝试一次次失败后，不仅对自己丧失了信心，更浪费了大把的时间。
+        </p>
+        <p>
+          鉴于此，汪洋博士一直尝试寻找合适的人选，给大家讲解类似斯坦福那样的
+          CS
+          核心课程，为国产工业软件的崛起出一份力。但遗憾的是，很多编程高手无法帮助传统工科前进，所以迟迟没有进展。
+        </p>
+        <p>
+          机缘巧合，认识了汪洋博士。由于我对斯坦福 CS 课程有一点点心得，5
+          月份的时候，汪洋博士就希望我能够出面，给大家讲讲这门课。这是很难答应下来的！一方面本人已经工作，没有太多的精力；另一方面也怕讲不好，毕竟学和教是两码事。所以当时就建了一个群，供大家学习交流。
+        </p>
+        <p>
+          直到最近，在很多朋友催促之下，汪洋博士迫切希望我，不管效果如何，一定要把这件事先做起来。国内工业软件要想发展，只能依赖传统工科行业的朋友，而这些有识之士，苦于陈旧的教育体系，迟迟入不了编程的大门。
+        </p>
+        <p>
+          受汪洋博士的热情感染，思考再三，决定先讲一期试试。毕竟做了，总比没有好！
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">课程安排</h2>
+        <hr />
+        <p>
+          课程预计安排 20 次课和 7
+          次作业。计划每周一和周四安排两次课程，每次作业会选个周末安排一次讲解。
+        </p>
+        <p>本课程主要涉及以下几个主题：</p>
+        <ul>
+          <li>C++ 基础知识</li>
+          <li>抽象数据结构</li>
+          <li>递归</li>
+          <li>类和面向对象编程</li>
+          <li>内存管理</li>
+          <li>经典抽象数据类型</li>
+          <li>经典高级算法</li>
+        </ul>
+      </div>
+      <div class="col-lg-12 cs101">
+        <p>
+          <i>建议学习时间的投入不低于 150 个小时。以我经验，每节课平均学习 3
+            小时，每次作业平均 15 小时，供大家参考。</i>
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">参考教材</h2>
+        <hr />
+        <p>
+          本课程不需要教材，开课后会持续整理课堂文档。如需参考阅读，推荐下载或购买斯坦福荣誉教授
+          <a href="https://cs.stanford.edu/people/eroberts/" target="_blank">Eric Roberts</a>
+          的书：
+        </p>
+        <p>
+          开源英文版：《<a href="https://web.stanford.edu/dept/cs_edu/resources/textbook/Reader-Beta-2012.pdf"
+            target="_blank">Programming Abstractions in C++</a>》 <i>自行下载</i>
+        </p>
+        <p>
+          中文翻译版：《<a href="https://book.douban.com/subject/27004881/" target="_blank">C++ 程序设计：基础、编程抽象与算法策略</a>》
+          <i>支持正版</i>
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">授课方式</h2>
+        <hr />
+        <p>
+          考虑到跨平台需求，目前暂定使用<a href="https://www.feishu.cn/" target="_blank">飞书会议</a>视频。请提前下载注册，方便后续加入飞书群组。
+        </p>
+        <p>
+          课程相关答疑，借用 Piazza
+          答疑平台，方便交流。有任何问题，欢迎发帖求助。
+        </p>
+        <p>不建议在聊天群提问，一是不方便检索，二是信息无法保留。</p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">面向对象</h2>
+        <hr />
+        <p>
+          本课程主要面向传统工科朋友，苦于编程学习迟迟不得要领；或是想掌握类似斯坦福
+          CS106 的编程知识，却总是无法独立完成的朋友。
+        </p>
+        <p>
+          本课程不适合已经学完一门数据结构或算法课程的朋友；不适合单纯想练习
+          C++ 语法技巧的朋友；本课程用到的语法技巧仅仅算是 C++ 入门。
+        </p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">报名方式</h2>
+        <hr />
+        <p>二期授课时间暂定 2023/2/20 开始，报名请访问：<a href="https://h8pqt7tpdf.feishu.cn/docx/K3pndM0YxoKoLgx1Rsxc15WZnQh"  target="_blank">最新报名链接</a></p>
+      </div>
+      <div class="col-lg-12 cs101">
+        <h2 class="fw-bold lh-1 mb-3">联系方式</h2>
+        <hr />
+        <p>微信：StickMind</p>
+        <p>
+          邮箱：<a href="mailto:xuehao0618@outlook.com">xuehao0618@outlook.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="copyright"><a href="https://blog.stickmind.com" target="_blank">Xue Hao</a> &copy; Copyright 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../assets/js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="../../assets/js/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="../../assets/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
